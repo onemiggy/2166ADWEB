@@ -1,0 +1,254 @@
+<!--<h1>{{ title }}</h1>
+
+
+<input type="text" [value]="clientName"/> 
+  <p [style.color]="myColor"> This text used style handling!</p>
+    <p [class]="appliedCSS"> This line applied myClass property.</p>
+    <button (click)="clickMe()"> Click Me</button>
+    <button (click)="resetClickCount()">Clear</button>
+    <p>You have clicked {{ clickCount }} times!</p>  
+
+  -->
+  
+  <!-- Navigation-->
+     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #7393B3; font-family: 'Arial', sans-serif;">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="#!" href="#!">{{ brand }} </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!" style="color: #000000; font-family: 'Verdana', sans-serif;">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!" style="color: #000000; font-family: 'Georgia', serif;">About</a></li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-outline-dark" type="submit" style="color: #343a40; font-family: 'Courier New', monospace;">
+                        <i class="bi-cart-fill me-1"></i>
+                        Cart
+                        <span class="badge bg-dark text-white ms-1 rounded-pill">{{ clickCount }} </span>
+                    </button>
+                    <button (click)="resetClickCount()" class="btn btn-outline-secondary" style="color: #000000; font-family: 'Helvetica', sans-serif;">Clear</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+ <!-- Header-->
+ <header class="head">
+  <div class="container px-4 px-lg-5 my-5">
+      <div class="text-center text-white">
+          <h1 class="display-4 fw-bolder"  [style.color]="myColor">Aroma Alcove</h1>
+          <p class="Passion">Where Passion meets Perfume</p>
+      </div>
+  </div>
+</header>
+
+
+   <!-- Section-->
+   <section class="py-5" style="background-color: #7393B3 ;">
+    <div class="container px-4 px-lg-5 mt-5">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="https://fimgs.net/mdimg/perfume/375x500.77058.jpg" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4" style="background-color: #ffebcd; color: #333;">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder" style="color: #a52a2a;">Black Phantom "Memento Mori" by Killian</h5>
+                            <!-- Product price-->
+                            <span style="color: #28a745;">$290</span>
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#"(click)="clickMe()">Add to cart</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Sale badge-->
+                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                    <!-- Product image-->
+                    <img class="card-img-top" src="https://fimgs.net/mdimg/perfume/375x500.27695.jpg" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4" style="background-color: #ffebcd; ">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder"  style="color: #a52a2a;">Armaf Hunter</h5>
+                            <!-- Product reviews-->
+                            <div class="d-flex justify-content-center small text-warning mb-2">
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                            </div>
+                            <!-- Product price-->
+                            <span class="text-muted text-decoration-line-through" >$25.88</span>
+                            $17
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#"(click)="clickMe()">Add to cart</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Sale badge-->
+                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                    <!-- Product image-->
+                    <img class="card-img-top" src="https://fimgs.net/mdimg/perfume/375x500.12317.jpg" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4" style="background-color: #ffebcd; color: #333;">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder" style="color: #a52a2a;">Creed Royal Oud</h5>
+                            <!-- Product price-->
+                            <span class="text-muted text-decoration-line-through">$570.00</span>
+                            $500
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#"(click)="clickMe()">Add to cart</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="https://fimgs.net/mdimg/perfume/375x500.60035.jpg" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4" style="background-color: #ffebcd; color: #333;">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder" style="color: #a52a2a;">Paco Robanne One Million</h5>
+                            <!-- Product reviews-->
+                            <div class="d-flex justify-content-center small text-warning mb-2">
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                            </div>
+                            <!-- Product price-->
+                            <span style="color: #28a745;">$78.00</span>
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#"(click)="clickMe()">Add to cart</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Sale badge-->
+                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                    <!-- Product image-->
+                    <img class="card-img-top" src="https://fimgs.net/mdimg/perfume/375x500.31909.jpg" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4" style="background-color:  #DAF7A6;">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder" style="color: #a52a2a;">Dolce and Gabanna The One</h5>
+                            <!-- Product price-->
+                            <span class="text-muted text-decoration-line-through">$56.70</span>
+                            $50
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#"(click)="clickMe()">Add to cart</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="https://fimgs.net/mdimg/perfume/375x500.9828.jpg" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4" style="background-color:  #DAF7A6;">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder" style="color: #a52a2a;">Creed Adventus</h5>
+                            <!-- Product price-->
+                            <span style="color: #28a745;">$495</span>
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#"(click)="clickMe()">Add to cart</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Sale badge-->
+                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                    <!-- Product image-->
+                    <img class="card-img-top" src="https://fimgs.net/mdimg/perfume/375x500.30499.jpg" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4" style="background-color:  #DAF7A6;">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder" style="color: #a52a2a;">Spicebomb Viktor&Rolf</h5>
+                            <!-- Product reviews-->
+                            <div class="d-flex justify-content-center small text-warning mb-2">
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                            </div>
+                            <!-- Product price-->
+                            <span class="text-muted text-decoration-line-through">$134.00</span>
+                            $125.00
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#"(click)="clickMe()">Add to cart</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="https://fimgs.net/mdimg/perfume/375x500.59596.jpg" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4" style="background-color:  #DAF7A6;">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder" style="color: #a52a2a;">Zoologist Bat</h5>
+                            <!-- Product reviews-->
+                            <div class="d-flex justify-content-center small text-warning mb-2" >
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                            </div>
+                            <!-- Product price-->
+                            <span style="color: #28a745;">$175</span>
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#"(click)="clickMe()">Add to cart</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer-->
+<footer class="heads">
+  <div class="container"><p class="m-0 text-center text-white">"Perfume is the poetry of memory, an invisible accessory that whispers the essence of your soul and leaves an indelible trace of elegance in the air."</p></div>
+</footer>
